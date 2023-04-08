@@ -1,0 +1,14 @@
+tsc --init
+npm init --y
+mkdir src dist
+
+tsc -w :run in watch mode 
+
+tsconfig.json:
+
+"include": ["src/**/*/.ts"]
+"exclude": ["node_modules"]
+
+---------------------------------------
+
+outdir: "./dist"  //dir compile to js
